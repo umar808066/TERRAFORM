@@ -4,11 +4,11 @@ provider "aws" {
 }
 
 
-resource "aws_iam_user" "iamusercbz1" {
-  name = "cbz1"
+resource "aws_iam_user" "batch38iamuser1" {
+  name = "batch381"
   path = "/"
 
   tags = {
-    name = "cbz1"
+    name = "batch381"
   }
 }
