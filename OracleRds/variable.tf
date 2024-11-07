@@ -1,10 +1,10 @@
-variable "thi_aws_profile" {
+variable "this_aws_profile" {
   description = "AWS profile to use"
   type        = string
   default     = "default"
 }
 
-variable "thi_aws_region" {
+variable "this_aws_region" {
   description = "AWS region for RDS instance"
   type        = string
   default     = "ap-south-1"
