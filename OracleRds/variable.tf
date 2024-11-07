@@ -1,4 +1,3 @@
-
 variable "this_aws_region" {
   description = "AWS region for RDS instance"
   type        = string
