@@ -1,7 +1,7 @@
 variable "this_aws_region" {
   description = "AWS region for RDS instance"
   type        = string
-  default     = "ap-south-1"
+  default     = "us-east-1"
 }
 
 variable "this_db_identifier" {
