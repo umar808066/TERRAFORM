@@ -1,8 +1,3 @@
-variable "this_aws_profile" {
-  description = "AWS profile to use"
-  type        = string
-  default     = "default"
-}
 
 variable "this_aws_region" {
   description = "AWS region for RDS instance"
