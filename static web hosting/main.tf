@@ -20,10 +20,10 @@ resource "aws_instance" "example" {
     #!/bin/bash
     sudo apt install unzip -y curl
     sudo apt install nginx -y
-    curl -O https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip
-    sudo unzip oxer.zip
+    curl -O https://www.free-css.com/assets/files/free-css-templates/download/page296/carvilla.zip
+    sudo unzip carvilla.zip
     sudo rm -rf /var/www/html/*
-    sudo mv oxer-html/* /var/www/html/
+    sudo mv carvilla-v1.0/* /var/www/html/
     sudo systemctl enable nginx
     sudo systemctl start nginx
     EOF
