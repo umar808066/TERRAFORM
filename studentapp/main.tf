@@ -68,10 +68,10 @@ user_data = <<-EOF
               sudo apt install openjdk-11-jre-headless -y maven
 
               # Clone the repository
-              git clone https://github.com/Aamantamboli/Studentapp.git /home/ubuntu/Studentapp
+              git clone https://github.com/umar808066/studentapp-ui.git /home/ubuntu/Studentapp
 
               # Navigate to the project directory and build it
-              cd /home/ubuntu/Studentapp
+              cd /home/ubuntu/Studentapp-ui
               mvn clean package
 
               # Download and install Tomcat

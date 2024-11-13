@@ -42,13 +42,13 @@ variable "subnet_cidr_block" {
 variable "availability_zone" {
   description = "The availability zone for the subnet."
   type        = string
-  default     = "ap-south-1a"
+  default     = "us-east-1"
 }
 
 variable "ami" {
   type = string
   description = "The AMI ID to use for the instance"
-  default     = "ami-0dee22c13ea7a9a67"
+  default     = "ami-0866a3c8686eaeeba"
 }
 
 variable "instance_type" {
