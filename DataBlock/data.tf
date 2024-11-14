@@ -1,5 +1,5 @@
 data "aws_ami" "example" {
-    name_regex       = "student-ami"
+    name_regex       = "myami"
     filter {
        name   = "name"
        values = ["myami"]
