@@ -87,6 +87,6 @@ user_data = <<-EOF
               sudo cp /home/ubuntu/Studentapp/*.jar /opt/tomcat/lib/
 
               # Start Tomcat
-              bash /opt/tomcat/bin/catalina.sh start
+              sudo bash /opt/tomcat/bin/catalina.sh start
               EOF
 }
