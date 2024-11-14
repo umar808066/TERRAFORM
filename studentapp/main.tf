@@ -60,12 +60,10 @@ resource "aws_instance" "studentapp" {
   }
 
 user_data = <<-EOF
-              #!/bin/bash
-              # Update the package repository
+               #!/bin/bash
               sudo apt update -y
-
-              # Install Java and Maven
               sudo apt install openjdk-11-jre-headless -y maven
+              sudo apt install mariadb-client -y
 
               # Clone the repository
               git clone https://github.com/umar808066/studentapp-ui.git /home/ubuntu/Studentapp
@@ -85,9 +83,10 @@ user_data = <<-EOF
               export CATALINA_HOME=/opt/tomcat
 
               # Copy the built artifacts to Tomcat's webapps directory
-              sudo cp /home/ubuntu/Studentapp/target/*.war /opt/tomcat/webapps/
+              sudo cp /home/ubuntu/Studentapp-ui/target/*.war /opt/tomcat/webapps/
+              sudo cp /home/ubuntu/Studentapp-ui/*.jar /opt/tomcat/lib/
 
               # Start Tomcat
-              sudo bash /opt/tomcat/bin/catalina.sh start
+              bash /opt/tomcat/bin/catalina.sh start
               EOF
 }
