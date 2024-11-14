@@ -60,7 +60,7 @@ resource "aws_instance" "studentapp" {
   }
 
 user_data = <<-EOF
-               #!/bin/bash
+              #!/bin/bash
               sudo apt update -y
               sudo apt install openjdk-11-jre-headless -y maven
               sudo apt install mariadb-client -y
