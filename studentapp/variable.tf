@@ -42,7 +42,7 @@ variable "subnet_cidr_block" {
 variable "availability_zone" {
   description = "The availability zone for the subnet."
   type        = string
-  default     = "us-east-1"
+  default     = "us-east-1a"
 }
 
 variable "ami" {
