@@ -66,10 +66,10 @@ user_data = <<-EOF
               sudo apt install mariadb-client -y
 
               # Clone the repository
-              git clone https://github.com/umar808066/studentapp-ui.git /home/ubuntu/Studentapp
+              git clone https://github.com/umar808066/studentapp-ui.git /home/ubuntu/studentapp-ui
 
               # Navigate to the project directory and build it
-              cd /home/ubuntu/Studentapp-ui
+              cd /home/ubuntu/studentapp-ui
               mvn clean package
 
               # Download and install Tomcat
@@ -83,8 +83,8 @@ user_data = <<-EOF
               export CATALINA_HOME=/opt/tomcat
 
               # Copy the built artifacts to Tomcat's webapps directory
-              sudo cp /home/ubuntu/Studentapp-ui/target/*.war /opt/tomcat/webapps/
-              sudo cp /home/ubuntu/Studentapp-ui/*.jar /opt/tomcat/lib/
+              sudo cp /home/ubuntu/studentapp-ui/target/*.war /opt/tomcat/webapps/
+              sudo cp /home/ubuntu/studentapp-ui/*.jar /opt/tomcat/lib/
 
               # Start Tomcat
               bash /opt/tomcat/bin/catalina.sh start
