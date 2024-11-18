@@ -6,3 +6,5 @@ provider "aws" {
               name = "aws"
             }
     
+        }
+}        
